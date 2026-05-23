@@ -1,6 +1,5 @@
 [![Live Demo](https://img.shields.io/badge/Live%20Demo-Visit-00C7B7?style=for-the-badge&logo=vercel)](https://iris-lyart-pi.vercel.app/)
 <div align="center">
-  <img src="https://raw.githubusercontent.com/AnimeshJ004/Iris/main/public/banner.png" alt="Iris Assistant Banner" width="100%">
   <h1>✨ Iris AI Assistant ✨</h1>
   <p><strong>A modern, serverless-ready conversational AI featuring a stunning UI and powerful local command routing.</strong></p>
   
@@ -25,10 +24,6 @@ Designed for both speed and aesthetics, Iris intercepts local commands instantly
 
 <img width="1363" height="601" alt="Screenshot 2026-05-23 224032" src="https://github.com/user-attachments/assets/725206a2-b4f2-4a2e-89f5-c16a0b660243" />
 
-
-<div align="center">
-  <img src="C:/Users/vlaze/.gemini/antigravity-ide/brain/f74b59ab-9da4-4618-9dbe-b13425c95bfe/iris_hero_banner_1779555876873.png" alt="Iris UI Screenshot" width="800" style="border-radius: 12px; box-shadow: 0 10px 30px rgba(0,0,0,0.5);">
-</div>
 
 ---
 
