@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Iris — AI Assistant">
+    <title>Iris AI</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/static/style.css">
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>✨</text></svg>">
+</head>
+<body>
+
+    <!-- Animated Mesh Background -->
+    <div class="mesh-background">
+        <div class="mesh-blob blob-1"></div>
+        <div class="mesh-blob blob-2"></div>
+        <div class="mesh-blob blob-3"></div>
+    </div>
+
+    <div class="app-layout" id="appLayout">
+
+        <!-- Mobile Sidebar Overlay -->
+        <div class="sidebar-overlay" id="sidebarOverlay"></div>
+
+        <!-- Sidebar -->
+        <aside class="sidebar" id="sidebar">
+            <div class="sidebar-header">
+                <span class="iris-title">Iris</span>
+            </div>
+
+            <button class="new-chat-btn" id="newChatBtn">
+                <span class="icon">＋</span>
+                New Chat
+            </button>
+
+            <div class="sessions-list" id="sessionsList">
+                <!-- Sessions populated by JS -->
+            </div>
+
+            <div class="sidebar-footer">
+                <button id="themeToggleBtn" class="icon-btn" title="Toggle theme">
+                    <span id="themeIcon">🌙</span>
+                    <span class="btn-text">Theme</span>
+                </button>
+                <button id="clearAllBtn" class="icon-btn" title="Clear all chats">
+                    <span>🗑️</span>
+                    <span class="btn-text">Clear All</span>
+                </button>
+            </div>
+        </aside>
+
+        <!-- Main Chat Area -->
+        <main class="chat-area">
+
+            <!-- Header -->
+            <header class="chat-header">
+                <div class="chat-header-left">
+                    <button class="icon-btn mobile-menu-btn" id="mobileMenuBtn" title="Menu">☰</button>
+                    <h1 class="chat-title" id="chatTitle">New Chat</h1>
+                </div>
+                <div class="chat-header-actions">
+                    <button class="icon-btn" id="voiceToggleBtn" title="Toggle voice output">
+                        <span id="voiceIcon">🔇</span>
+                    </button>
+                </div>
+            </header>
+
+            <!-- Messages -->
+            <div class="messages-container" id="messagesContainer">
+                <!-- Welcome screen -->
+                <div class="welcome-screen" id="welcomeScreen">
+                    <div class="welcome-icon">✨</div>
+                    <h2>How can I help you today?</h2>
+                    
+                    <div class="welcome-suggestions">
+                        <!-- Tiles -->
+                        <button class="suggestion-tile" data-suggestion="Explain quantum computing in simple terms">
+                            <span class="tile-icon">💡</span>
+                            <span class="tile-text">Explain quantum computing simply</span>
+                        </button>
+                        <button class="suggestion-tile" data-suggestion="Write a Python function to sort a list">
+                            <span class="tile-icon">💻</span>
+                            <span class="tile-text">Write a Python sort function</span>
+                        </button>
+                        <button class="suggestion-tile" data-suggestion="What is the date and time right now?">
+                            <span class="tile-icon">📅</span>
+                            <span class="tile-text">What's the date & time?</span>
+                        </button>
+                        <button class="suggestion-tile" data-suggestion="wikipedia Artificial Intelligence">
+                            <span class="tile-icon">📚</span>
+                            <span class="tile-text">Search Wikipedia for AI</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Input Area -->
+            <div class="input-area">
+                <div class="input-wrapper" id="inputWrapper">
+                    <button class="input-btn" id="voiceInputBtn" title="Voice input">
+                        🎤
+                    </button>
+                    <textarea
+                        id="commandInput"
+                        placeholder="Message Iris..."
+                        rows="1"
+                        autofocus
+                    ></textarea>
+                    <button class="input-btn send-btn" id="sendBtn" title="Send message">
+                        ➤
+                    </button>
+                </div>
+                <div class="input-hint">
+                    Iris can make mistakes. Consider verifying important information.
+                </div>
+            </div>
+
+        </main>
+    </div>
+
+    <!-- Marked.js for Markdown rendering -->
+    <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+    <script src="/static/script.js"></script>
+</body>
+</html>
